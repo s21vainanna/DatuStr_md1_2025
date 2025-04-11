@@ -1,5 +1,6 @@
 package service;
 
+import datastr.MyDeque;
 import datastr.MyQueue;
 import datastr.MyStack;
 
@@ -34,6 +35,20 @@ public class MainService {
 		queue.makeEmpty();
 		System.out.println("------I EMPTIED THE QUEUE!---------");
 		System.out.println("Is queue empty? " + queue.isEmpty());
+		
+		MyDeque<Integer> deque = new MyDeque<>();
+		deque.addToFront(55);
+		deque.addToFront(23);
+		deque.addToRear(100);
+		deque.addToRear(48);
+		deque.addToRear(77);
+		deque.print();
+		System.out.println("Deleted deque element: " + deque.removeFromRear());
+		System.out.println("Deque size: " + deque.size());
+		deque.print();
+		deque.makeEmpty();
+		System.out.println("------I EMPTIED THE DEQUE!---------");
+		System.out.println("Is deque empty? " + deque.isEmpty());
 
 	}
 

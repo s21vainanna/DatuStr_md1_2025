@@ -2,9 +2,9 @@ package datastr;
 
 public class MyQueue<T> {
 	
-	private MyNodeQ<T> front; //reference uz rindas priekšējo mezglu
-	private MyNodeQ<T> rear;  //reference uz rindas pēdējo mezglu
-	private int length;// rindas lielums lielums
+	protected MyNodeQ<T> front; //reference uz rindas priekšējo mezglu
+	protected MyNodeQ<T> rear;  //reference uz rindas pēdējo mezglu
+	protected int length;// rindas lielums lielums
     
 	public MyQueue() {
 	    this.front = null;
