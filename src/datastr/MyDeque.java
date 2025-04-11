@@ -19,10 +19,11 @@ public class MyDeque<T> extends MyQueue<T> {
 			front = newNode;
 			rear = newNode;
 		} else {
+			front.setPrev(newNode);
 			newNode.setNext(front);// pirmajam mezglam jāuzstāda saite uz jauno mezglu
 			front = newNode;// front referenci nomaina uz jauno mezglu
-			length++;
 		}
+		length++;
 
 	}
 

@@ -28,6 +28,9 @@ public class MyQueue<T> {
         if (isEmpty()) {//speciālais gadījums
             front = newNode;//pēc elementa pievienošanas gan front reference, gan rear reference norāda uz šo vienīgo mezglu.
         } else {
+        	
+        	newNode.setPrev(rear);
+        	
             rear.setNext(newNode);//Pēdējam mezglam jāuzstāda saite uz jaunu mezglu;
         }
         rear = newNode;//rear referenci nomainam uz jauno mezglu.

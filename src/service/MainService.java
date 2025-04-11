@@ -35,7 +35,7 @@ public class MainService {
 		queue.makeEmpty();
 		System.out.println("------I EMPTIED THE QUEUE!---------");
 		System.out.println("Is queue empty? " + queue.isEmpty());
-		/* */
+		
 		MyDeque<Integer> deque = new MyDeque<>();
 		deque.addToFront(55);
 		deque.addToFront(23);
